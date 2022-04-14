@@ -11,6 +11,7 @@ import { FormsModule} from '@angular/forms';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { AchieveComponent } from './achieve/achieve.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { AchieveComponent } from './achieve/achieve.component';
     UpdateEmployeeComponent,
     AboutComponent,
     ContactComponent,
-    AchieveComponent
+    AchieveComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

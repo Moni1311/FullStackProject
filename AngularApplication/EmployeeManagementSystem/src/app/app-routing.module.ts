@@ -7,16 +7,19 @@ import { EmployeeDetailsComponent } from './employee-details/employee-details.co
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { AchieveComponent } from './achieve/achieve.component';
+import { HomeComponent } from './home/home.component';
 
 
 const routes: Routes = [{path: 'employees', component: EmployeeListComponent},
 {path: 'create-employee', component: CreateEmployeeComponent},
-{path: '', redirectTo: 'employees', pathMatch: 'full'},
+{path: '', redirectTo: 'home', pathMatch: 'full'},
 {path: 'update-employee/:id', component: UpdateEmployeeComponent},
 {path: 'employee-details/:id', component: EmployeeDetailsComponent},
 {path: 'about', component: AboutComponent},
 {path: 'contact', component: ContactComponent},
-{path: 'achieve', component: AchieveComponent}];
+{path: 'achieve', component: AchieveComponent},
+{path: 'home', component: HomeComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

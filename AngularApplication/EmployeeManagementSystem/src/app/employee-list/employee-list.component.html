@@ -1,11 +1,15 @@
-<h2> Employee List</h2>
-<table class = "table table-striped">
+<div class="dot">
+    <img src="http://4.bp.blogspot.com/-qhglf124V_8/UQpvkdxXNRI/AAAAAAAABXI/0JUyFAhi6kM/s1600/employee-Management-System.jpg"><br>
+    </div>
+<div class="container">
+    <h2 style="font-size: 40px;"> Employee List</h2>
+<table class = "table table-striped" style="margin-right: 100px;">
     <thead>
         <tr>
             <th> ID</th>
             <th> First Name</th>
             <th> Last Name </th>
-            <th>Email Id</th>
+            <th> Designation </th>
             <th> Actions </th>
            
         </tr>
@@ -15,12 +19,13 @@
             <td> {{ employee.id }} </td>
             <td> {{ employee.firstName }} </td>
             <td> {{ employee.lastName }} </td>
-            <td> {{ employee.emailId }} </td>
+            <td> {{ employee.designation }} </td>
             <td>
                 <button (click) = "updateEmployee(employee.id)" class = "btn btn-info"> Update</button>
-                <button (click) = "deleteEmployee(employee.id)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
-                <button (click) = "employeeDetails(employee.id)" class = "btn btn-info" style="margin-left: 10px"> View</button>
+                <button (click) = "deleteEmployee(employee.id)" class = "btn btn-danger" style="margin-left: 10px;"> Delete</button>
+                <button (click) = "employeeDetails(employee.id)" class = "btn btn-info" style="margin-left: 10px"> View Details</button>
             </td>
         </tr>
     </tbody>
 </table>
+</div>
